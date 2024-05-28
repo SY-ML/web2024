@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Message Board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f8fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .post-box {
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .post-box input, .post-box textarea {
+            width: 100%;
+            border: 1px solid #e1e8ed;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .post-box button {
+            background-color: #1da1f2;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .posts {
+            background-color: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #e1e8ed;
+            padding: 10px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .username {
+            font-weight: bold;
+            color: #1da1f2;
+        }
+        .message {
+            margin-top: 5px;
+        }
+        .timestamp {
+            font-size: 0.85em;
+            color: #657786;
+            margin-top: 5px;
+        }
+    </style>
+    
+    <!-- [1] supabase 불러오는 스크립트: supabase라는 전역변수가 만들어짐-->
+    
+
+    <!-- [1] ends here-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="post-box">
+                    <h3>Post a Message</h3>
+                    <!-- ▼ form -->
+                    <form id="post-form">
+                        <!-- ▼ username -->
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <!-- ▼ message -->
+                        <textarea id="message" name="message" rows="3" placeholder="What's happening?" required></textarea>
+                        <!-- ▼ submit button -->
+                        <button type="submit">Post</button>
+                    </form>
+                </div>
+                <div class="posts">
+                    <h3>Messages</h3>
+                    <!-- ▼ post list -->
+                    <div id="post-list">
+                        <!-- Post list will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // [2] Supabase 프로젝트 URL, key 입력 후 초기화
+
+
+
+    // [2] ends here
+    
+
+    // [3] 데이터를 불러올 함수 refreshHistory 생성
+
+
+
+    // [3] ends here
+
+
+    // [4] Form에 입력된 데이터를 DB에 입력하는 함수 recordHandler 생성
+
+
+
+
+    // [4] ends here
+
+    // [5] 이벤트 리스너 추가
+
+
+    
+    </script>
+</html>
